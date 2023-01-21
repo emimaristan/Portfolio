@@ -333,12 +333,13 @@ p.generic {
     grid-column: 1/2;
     grid-row: 2/3;
     position: fixed;
-    top: 100px;
+    top: 200px;
     margin-left: 0;
     display: block;
+    bottom: 0;
   }
   aside p {
-    height: 100px;
+    height: 500px;
     width: 0px;
     border: #ccd6f6 solid 1.5px;
     margin: 0 10px;
