@@ -1,226 +1,322 @@
 /* Setting Body and Grid */
-body{
-    margin: 0;
-    background-color: #0a192f;
-    font-size: 20px;
+body {
+  margin: 0;
+  background-color: #0a192f;
+  font-size: 15px;
 }
-#content{
-    display: grid;
-    grid-template-columns: 1fr 11fr;
-    grid-template-rows: 100px auto 130px;
-    margin: 0 auto;
-    max-width: 100%;
+#content {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  grid-template-rows: 100px auto 130px;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 /* Main content */
-main{
-    grid-column: 2/3;
-    grid-row: 2/3;
-    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-    color: #ccd6f6;
-    text-align: center;
-    max-width: 1400px;
+main {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  color: #ccd6f6;
+  text-align: center;
+  margin-left: 35px;
+  margin-right: 25px;
 }
 
-main p{
-    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+main p {
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 /* Greeting */
-main h2{
-    color: #8892b0;
-    font-size: 70px;
-    margin: 10px 0;
+main h2 {
+  color: #8892b0;
+  font-size: 40px;
+  margin: 10px 0;
 }
-main h1{
-    font-size: 80px;
-    margin: 10px 0;
+main h1 {
+  font-size: 50px;
+  margin: 10px 0;
 }
-.greeting{
-    padding-top: 50px;
-    text-align: left;
+.greeting {
+  padding-top: 20px;
+  margin-bottom: 200px;
+  text-align: left;
 }
-.greeting p{
-    color: #64ffda;
+.greeting p {
+  color: #64ffda;
 }
-.greeting p.simpletext{
-    margin-bottom: 70px;
+.greeting p.simpletext {
+  margin-bottom: 70px;
 }
-p.simpletext{
-    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-    padding-top: 20px;
-    color: #8892b0;
+p.simpletext {
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  padding-top: 20px;
+  color: #8892b0;
 }
-p.simpletext a{
-    text-decoration: none;
-    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;;
-    padding-top: 20px;
-    color: #64ffda;
+p.simpletext a {
+  text-decoration: none;
+  font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
+    system-ui, sans-serif;
+  padding-top: 20px;
+  color: #64ffda;
 }
-p.simpletext a:hover{
-    text-decoration: underline;
+p.simpletext a:hover {
+  text-decoration: underline;
 }
-.contents{
-    padding-top: 100px;
+.contents {
+  padding-top: 100px;
 }
-.contents div{
-    margin: 300px 0;
-    padding: 100px 0;
-    text-align: left;
+.contents div {
+  margin: 300px 0;
+  margin-bottom: 500px;
+  padding: 100px 0;
+  text-align: left;
 }
-.contents h3{
-    font-size: 40px;
+.contents h3 {
+  font-size: 30px;
 }
-.contents p{
-    margin: 40px 0;
+.contents p {
+  margin: 40px 0;
 }
-div.contents li a{
-    font-size: 18px;
-    text-decoration: none;
-    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-    color: #64ffda;
+div.contents li a {
+  font-size: 15px;
+  text-decoration: none;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: #64ffda;
 }
-div.contents li a:hover{
-    font-size: 20px;
+div.contents li a:hover {
+  font-size: 18px;
 }
 div.contents li {
-    margin: 25px 0;
+  margin: 25px 0;
 }
 div.contents li::before {
-    margin: 25px 0;
-    content: "-  ";
-    color: #64ffda;
+  margin: 25px 0;
+  content: "-  ";
+  color: #64ffda;
 }
-div.contents ul{
-    white-space: nowrap;
-    list-style-type: none;
+div.contents ul {
+  white-space: nowrap;
+  list-style-type: none;
 }
-p.sectionname{
-    font-size: 18px;
-    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-    color: #64ffda;
+p.sectionname {
+  font-size: 18px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: #64ffda;
 }
-#about img{
-    border-radius: 50%;
-    height: 180px;
-    width: 180px;
-    margin-top: 40px;
+#about img {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  margin-top: 40px;
 }
 
 /* Aside styles (social links) */
-aside{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    position: fixed;
-    top: 500px;
+aside {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  position: fixed;
+  top: 500px;
 }
-aside ul{
-    white-space: nowrap;
-    margin: 0 auto;
-    text-align:center;
-    list-style-type: none;
+aside ul {
+  white-space: nowrap;
+  margin: 0 auto;
+  text-align: center;
+  list-style-type: none;
 }
-a img{
-    width: 28px;
-    height: 28px;
-    margin-bottom: 30px;
+a img {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 30px;
 }
-a img:hover{
-    width: 34px;
-    height: 34px;
+a img:hover {
+  width: 30px;
+  height: 30px;
 }
-aside p{
-    height: 400px;
-    width: 0px;
-    border: #ccd6f6 solid 1.5px;
-    margin: 0 12px;
+aside p {
+  height: 400px;
+  width: 0px;
+  border: #ccd6f6 solid 1.5px;
+  margin: 0 12px;
 }
 
 /* Nav styles */
-nav ul{
-    white-space: nowrap;
-    margin: 0 auto;
-    text-align:end;
+nav ul {
+  white-space: nowrap;
+  margin: 0 20px;
+  text-align: end;
 }
-nav li{
-    display: inline-block;
-    font-size: 18px;
-    margin: 0 5px;
-    padding: 15px;
+nav li {
+  display: inline-block;
+  font-size: 15px;
+  margin: 0 5px;
+  padding: 15px 5px;
 }
-nav{
-    grid-column: 1/3;
-    grid-row: 1/2;
-    position: sticky;
-    background-color: #0a192f;
-    top: 0px;
-    padding: 20px;
+nav {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  position: sticky;
+  background-color: #0a192f;
+  top: 0px;
+  padding: 20px;
 }
-div.icon{
-    position: absolute;
+div.icon {
+  position: absolute;
 }
-div.icon img{
-    width: 28px;
-    height: 28px;
-    padding: 15px;
+div.icon img {
+  width: 25px;
+  height: 25px;
+  padding: 10px;
 }
-div.icon img:hover{
-    width: 32px;
-    height: 32px;
-    margin-top: 10px;
-    margin-left: 10px;
-    padding: 7px;
-    cursor: pointer;
+div.icon img:hover {
+  width: 30px;
+  height: 30px;
+  margin-top: 6px;
+  margin-left: 6px;
+  padding: 3px;
+  cursor: pointer;
 }
-nav li a{
-    text-decoration: none;
-    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-    color: #8892b0;
+nav li a {
+  text-decoration: none;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: #8892b0;
 }
-nav li a:hover{
-    color: #64ffda;
+nav li a:hover {
+  color: #64ffda;
 }
-nav li:nth-child(1) a::before{
-    content: "1. ";
-    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-    color: #64ffda;
+nav li:nth-child(1) a::before {
+  content: "1. ";
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: #64ffda;
 }
-nav li:nth-child(2) a::before{
-    content: "2. ";
-    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-    color: #64ffda;
-}nav li:nth-child(3) a::before{
-    content: "3. ";
-    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-    color: #64ffda;
+nav li:nth-child(2) a::before {
+  content: "2. ";
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: #64ffda;
 }
-nav li:nth-child(4) a::before{
-    content: "4. ";
-    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-    color: #64ffda;
+nav li:nth-child(3) a::before {
+  content: "3. ";
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: #64ffda;
+}
+nav li:nth-child(4) a::before {
+  content: "4. ";
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: #64ffda;
 }
 
 /* Footer */
-footer{
-    grid-column: 1/3;   
-    grid-row: 3/4;
-    text-align: center;
-    font-size: 18px;
-    color: #8892b0;
+footer {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  text-align: center;
+  font-size: 15px;
+  color: #8892b0;
 }
-p.generic{
-    margin-bottom: 60px;
+p.generic {
+  margin-bottom: 50px;
 }
 /* General */
-.button{
-    border: #64ffda solid 2px;
-    background-color: transparent;
-    border-radius: 10px;
-    padding: 15px;    
-    font-size: 18px;
-    text-decoration: none;
-    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-    color: #64ffda;
+.button {
+  border: #64ffda solid 1.5px;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  color: #64ffda;
 }
-.button:hover{
-    background-color: #15473b;
+.button:hover {
+  background-color: #15473b;
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    margin: 0;
+    background-color: #0a192f;
+    font-size: 20px;
+  }
+  /* Main content */
+  /* Greeting */
+  main h2 {
+    color: #8892b0;
+    font-size: 70px;
+  }
+  main h1 {
+    font-size: 80px;
+  }
+  .greeting {
+    padding-top: 50px;
+  }
+  .greeting p.simpletext {
+    margin-bottom: 70px;
+  }
+  .contents h3 {
+    font-size: 40px;
+  }
+  div.contents li a {
+    font-size: 18px;
+  }
+  div.contents li a:hover {
+    font-size: 20px;
+  }
+  p.sectionname {
+    font-size: 18px;
+  }
+
+  /* Aside styles (social links) */
+  a img {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 30px;
+  }
+  a img:hover {
+    width: 34px;
+    height: 34px;
+  }
+
+  /* Nav styles */
+  nav ul {
+    margin: 0 auto;
+  }
+  nav li {
+    font-size: 18px;
+    margin: 0 5px;
+    padding: 15px;
+  }
+  div.icon {
+    position: absolute;
+  }
+  div.icon img {
+    width: 28px;
+    height: 28px;
+    padding: 15px;
+  }
+  div.icon img:hover {
+    width: 32px;
+    height: 32px;
+    margin-top: 8px;
+    margin-left: 8px;
+    padding: 5px;
+  }
+  nav li:nth-child(1) a::before {
+    content: "1. ";
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    color: #64ffda;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 18px;
+  }
+  p.generic {
+    margin-bottom: 60px;
+  }
+  /* General */
+  .button {
+    padding: 15px;
+    font-size: 18px;
+  }
 }
