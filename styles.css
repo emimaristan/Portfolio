@@ -327,3 +327,20 @@ p.generic {
     font-size: 18px;
   }
 }
+
+@media screen and (max-height: 700px) {
+  aside {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    position: fixed;
+    top: 100px;
+    margin-left: 0;
+    display: block;
+  }
+  aside p {
+    height: 100px;
+    width: 0px;
+    border: #ccd6f6 solid 1.5px;
+    margin: 0 10px;
+  }
+}
