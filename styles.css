@@ -142,7 +142,7 @@ a img:hover {
   height: 25px;
 }
 aside p {
-  height: 400px;
+  height: 2000px;
   width: 0px;
   border: #ccd6f6 solid 1.5px;
   margin: 0 10px;
@@ -339,7 +339,7 @@ p.generic {
     bottom: 0;
   }
   aside p {
-    height: 500px;
+    height: 2000px;
     width: 0px;
     border: #ccd6f6 solid 1.5px;
     margin: 0 10px;
