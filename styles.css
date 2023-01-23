@@ -25,6 +25,41 @@ main {
 main p {
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
+/* Spinner-download */
+.spinner-download {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a192f;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+.spinner-download-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.spinner-download::after {
+  content: "";
+  margin: 0 auto;
+  height: 75px;
+  width: 75px;
+  border: 15px solid #0a192f;
+  border-top-color: #64ffda;
+  border-radius: 50%;
+  animation: loading 1s ease infinite;
+}
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
 /* Greeting */
 main h2 {
   color: #8892b0;
