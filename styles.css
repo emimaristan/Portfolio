@@ -45,9 +45,9 @@ main p {
 .spinner-download::after {
   content: "";
   margin: 0 auto;
-  height: 75px;
-  width: 75px;
-  border: 12px solid #0a192f;
+  height: 32px;
+  width: 32px;
+  border: 4px solid #0a192f;
   border-top-color: #64ffda;
   border-radius: 50%;
   animation: loading 1s ease infinite;
@@ -284,9 +284,12 @@ p.generic {
   .spinner-download::after {
     content: "";
     margin: 0 auto;
-    height: 32px;
-    width: 32px;
+    height: 64px;
+    width: 64px;
     border: 8px solid #0a192f;
+    border-top-color: #64ffda;
+    border-radius: 50%;
+    animation: loading 1s ease infinite;
   }
   /* Main content */
   /* Greeting */
